@@ -50,9 +50,11 @@ int main() {
   scanf("%f", &PIB1);
   printf("Digite o número de pontos turísticos: \n");
   scanf("%d", &pts_turisticos1);
+  // Aqui eu coloquei as operações após captaçao dos valores (entrada pelo usuário), fiz o mesmo para a carta 2.
+  // Os camentarios daqui também servem para a carta 2
   densidade1 = ((float)populacao1/area1);
-  pib_per_capta1 = (PIB1 * 1000000000/populacao1);
-  inverso_densidade1 = 1/densidade1;
+  pib_per_capta1 = (PIB1 * 1000000000/populacao1); // Usei o valor 1000000000 para converter o valores para escala de bilhão
+  inverso_densidade1 = 1/densidade1; // como o melhor é ter menor densidade, calculei o valor inverso
   super_poder1 = (populacao1 + area1 + PIB1 + pts_turisticos1 + pib_per_capta1 + inverso_densidade1);
 
   printf(" \n");
@@ -109,6 +111,7 @@ int main() {
   printf("\n");
 
   //Comparação de cartas
+  // Optei por fazer as comparações fora e depois usar um operador ternário (busquei na internet como fazer) para comparar
   int compara_pop = populacao1 > populacao2;
   int compara_area = area1 > area2;
   int compara_pib = PIB1 > PIB2;
@@ -117,6 +120,7 @@ int main() {
   int compara_pib_per_capita = pib_per_capta1 > pib_per_capta2;
   int compara_super = super_poder1 > super_poder2;
   
+  // Funcionamento do operador ternário: condicao ? valor_se_verdadeiro : valor_se_falso
   printf("População: %s (%d)\n", compara_pop ? "Carta 1 venceu" : "Carta 2 venceu", compara_pop);
   printf("Área: %s (%d)\n", compara_area ? "Carta 1 venceu" : "Carta 2 venceu", compara_area);
   printf("PIB: %s (%d)\n", compara_pib ? "Carta 1 venceu" : "Carta 2 venceu", compara_pib);
