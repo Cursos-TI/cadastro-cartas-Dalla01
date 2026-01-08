@@ -74,11 +74,11 @@ int main() {
   printf("Código: %s \n", codigo1);
   printf("Nome da cidade: %s \n", nome_cidade1);
   printf("População: %d \n", populacao1);
-  printf("Área: %f Km² \n", area1);
-  printf("PIB: %f bilhões de reais \n", PIB1);
+  printf("Área: %.2f Km² \n", area1);
+  printf("PIB: %.2f bilhões de reais \n", PIB1);
   printf("Número de pontos turísticos: %d \n", pts_turisticos1);
-  printf("Densidade populacional: %f hab/Km² \n", densidade1);
-  printf("PIB per Capita: %f reais/hab \n", pib_per_capta1);
+  printf("Densidade populacional: %.2f hab/Km² \n", densidade1);
+  printf("PIB per Capita: %.2f reais/hab \n", pib_per_capta1);
   printf(" \n");
 
   // Exibição carta 02
@@ -87,11 +87,11 @@ int main() {
   printf("Código: %s \n", codigo2);
   printf("Nome da cidade: %s \n", nome_cidade2);
   printf("População: %d \n", populacao2);
-  printf("Área: %f Km² \n", area2);
-  printf("PIB: %f bilhões de reais \n", PIB2);
+  printf("Área: %.2f Km² \n", area2);
+  printf("PIB: %.2f bilhões de reais \n", PIB2);
   printf("Número de pontos turísticos: %d \n", pts_turisticos2);
-  printf("Densidade populacional: %f hab/Km² \n", densidade2);
-  printf("PIB per Capita: %f reais/hab \n", pib_per_capta2);
+  printf("Densidade populacional: %.2f hab/Km² \n", densidade2);
+  printf("PIB per Capita: %.2f reais/hab \n", pib_per_capta2);
 
 return 0;
 } 
